@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="6" passed="6">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Suite1" duration-ms="44316" started-at="2018-07-11T13:59:05Z" finished-at="2018-07-11T13:59:50Z">
+    <groups>
+    </groups>
+    <test name="test1" duration-ms="27333" started-at="2018-07-11T13:59:05Z" finished-at="2018-07-11T13:59:33Z">
+      <class name="Test1">
+        <test-method status="PASS" signature="initializeDriver(java.lang.String)[pri:0, instance:Test1@cc285f4]" name="initializeDriver" is-config="true" duration-ms="22" started-at="2018-07-11T13:59:05Z" finished-at="2018-07-11T13:59:05Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[ff]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initializeDriver -->
+        <test-method status="PASS" signature="goHome()[pri:0, instance:Test1@cc285f4]" name="goHome" is-config="true" duration-ms="9941" started-at="2018-07-11T13:59:06Z" finished-at="2018-07-11T13:59:16Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- goHome -->
+        <test-method status="PASS" signature="test1(java.lang.String, java.lang.String)[pri:0, instance:Test1@cc285f4]" name="test1" duration-ms="4035" started-at="2018-07-11T13:59:16Z" data-provider="searchData" finished-at="2018-07-11T13:59:20Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[github]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[https://github.com/]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test1 -->
+        <test-method status="PASS" signature="goHome()[pri:0, instance:Test1@cc285f4]" name="goHome" is-config="true" duration-ms="407" started-at="2018-07-11T13:59:20Z" finished-at="2018-07-11T13:59:20Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- goHome -->
+        <test-method status="PASS" signature="test1(java.lang.String, java.lang.String)[pri:0, instance:Test1@cc285f4]" name="test1" duration-ms="6562" started-at="2018-07-11T13:59:20Z" data-provider="searchData" finished-at="2018-07-11T13:59:27Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[maven]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[https://maven.apache.org/]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test1 -->
+        <test-method status="PASS" signature="goHome()[pri:0, instance:Test1@cc285f4]" name="goHome" is-config="true" duration-ms="412" started-at="2018-07-11T13:59:27Z" finished-at="2018-07-11T13:59:27Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- goHome -->
+        <test-method status="PASS" signature="test1(java.lang.String, java.lang.String)[pri:0, instance:Test1@cc285f4]" name="test1" duration-ms="3145" started-at="2018-07-11T13:59:27Z" data-provider="searchData" finished-at="2018-07-11T13:59:30Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[w3schools]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[https://www.w3schools.com/]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test1 -->
+        <test-method status="PASS" signature="close()[pri:0, instance:Test1@cc285f4]" name="close" is-config="true" duration-ms="2253" started-at="2018-07-11T13:59:30Z" finished-at="2018-07-11T13:59:33Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- close -->
+      </class> <!-- Test1 -->
+    </test> <!-- test1 -->
+    <test name="test2" duration-ms="16930" started-at="2018-07-11T13:59:33Z" finished-at="2018-07-11T13:59:50Z">
+      <class name="Test1">
+        <test-method status="PASS" signature="initializeDriver(java.lang.String)[pri:0, instance:Test1@3bfdc050]" name="initializeDriver" is-config="true" duration-ms="1" started-at="2018-07-11T13:59:33Z" finished-at="2018-07-11T13:59:33Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initializeDriver -->
+        <test-method status="PASS" signature="goHome()[pri:0, instance:Test1@3bfdc050]" name="goHome" is-config="true" duration-ms="4249" started-at="2018-07-11T13:59:33Z" finished-at="2018-07-11T13:59:37Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- goHome -->
+        <test-method status="PASS" signature="test1(java.lang.String, java.lang.String)[pri:0, instance:Test1@3bfdc050]" name="test1" duration-ms="3489" started-at="2018-07-11T13:59:37Z" data-provider="searchData" finished-at="2018-07-11T13:59:41Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[github]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[https://github.com/]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test1 -->
+        <test-method status="PASS" signature="goHome()[pri:0, instance:Test1@3bfdc050]" name="goHome" is-config="true" duration-ms="391" started-at="2018-07-11T13:59:41Z" finished-at="2018-07-11T13:59:41Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- goHome -->
+        <test-method status="PASS" signature="test1(java.lang.String, java.lang.String)[pri:0, instance:Test1@3bfdc050]" name="test1" duration-ms="4667" started-at="2018-07-11T13:59:41Z" data-provider="searchData" finished-at="2018-07-11T13:59:46Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[maven]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[https://maven.apache.org/]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test1 -->
+        <test-method status="PASS" signature="goHome()[pri:0, instance:Test1@3bfdc050]" name="goHome" is-config="true" duration-ms="368" started-at="2018-07-11T13:59:46Z" finished-at="2018-07-11T13:59:46Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- goHome -->
+        <test-method status="PASS" signature="test1(java.lang.String, java.lang.String)[pri:0, instance:Test1@3bfdc050]" name="test1" duration-ms="2819" started-at="2018-07-11T13:59:46Z" data-provider="searchData" finished-at="2018-07-11T13:59:49Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[w3schools]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[https://www.w3schools.com/]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test1 -->
+        <test-method status="PASS" signature="close()[pri:0, instance:Test1@3bfdc050]" name="close" is-config="true" duration-ms="904" started-at="2018-07-11T13:59:49Z" finished-at="2018-07-11T13:59:50Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- close -->
+      </class> <!-- Test1 -->
+    </test> <!-- test2 -->
+  </suite> <!-- Suite1 -->
+</testng-results>
