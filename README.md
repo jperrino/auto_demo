@@ -30,7 +30,6 @@
  <br>git init
  <br>git clone https://github.com/jperrino/auto_demo.git
  <br>
- <br>
 - Ubicarse en la carpeta que contiene el POM.xml y correr el siguiente comando:
  <br>mvn clean compile test
  <br>
