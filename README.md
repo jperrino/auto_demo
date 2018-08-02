@@ -25,7 +25,7 @@
  <br>
  <br>
  
-2. Intrucciones de ejecución:
+2. Instrucciones de ejecución:
 - Parado en la carpeta del proyecto, abrir un 'Git Bash' y correr lo siguientes comandos:
  <br>git init
  <br>git clone https://github.com/jperrino/auto_demo.git
