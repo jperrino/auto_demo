@@ -28,7 +28,8 @@
 2. Intrucciones de ejecución:
 - Parado en la carpeta del proyecto, abrir un 'Git Bash' y correr lo siguientes comandos:
 <br>git init
-<br>git clone https://github.com/jperrino/auto_demo.git<br>
+<br>git clone https://github.com/jperrino/auto_demo.git
+<br>
 - Ubicarse en la carpeta que contiene el POM.xml y correr el siguiente comando:
 <br>mvn clean compile test
 <br>
@@ -37,4 +38,4 @@
  <br> - Modificar los test a ejecutar a través de la edición del result.xml
  <br> - Comentar/Agregar el nodo 'TestX' y definir el browser ('ff' o 'chrome')
  <br> - Agregar el 'listener' con la clase que se requiere.
- <br> - En caso de 'fallas', los screeenshots se generan en '.\screenshots\TestX'
+ <br> - Los screeenshots se generan en '.\screenshots\TestX'
