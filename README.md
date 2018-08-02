@@ -1,6 +1,6 @@
 # Webdriver - Java Demo:
 
-1) Pasos previos:
+1. Pasos previos:
 - Instalar SDK Java 8+ :
   <br>http://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html
   <br>y variables de entorno:
@@ -24,9 +24,12 @@
  <br>https://git-scm.com/downloads
  <br>
  <br>
-2) Intrucciones de ejecución:
+ 
+2. Intrucciones de ejecución:
 - Parado en la carpeta del proyecto, abrir un 'Git Bash' y correr lo siguientes comandos:
  <br>git init
  <br>git clone https://github.com/jperrino/auto_demo.git
-- Ubicarse en la carpeta que contiene el POM.xml y correr el siguientes comando:
+ <br>
+ <br>
+- Ubicarse en la carpeta que contiene el POM.xml y correr el siguiente comando:
  <br>mvn clean compile test
