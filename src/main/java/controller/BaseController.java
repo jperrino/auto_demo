@@ -1,4 +1,4 @@
-package controls;
+package controller;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.NoSuchElementException;
@@ -7,11 +7,11 @@ import org.openqa.selenium.WebElement;
 
 import driver.DriverInstanceManager;
 
-public class BaseControl {
+public class BaseController {
 	
 	protected By locator;
 	
-	public BaseControl(By by)
+	public BaseController(By by)
 	{
 		this.locator = by;
 	}

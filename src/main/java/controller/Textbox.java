@@ -1,10 +1,10 @@
-package controls;
+package controller;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.NoSuchElementException;
 
-public class Textbox extends BaseControl{
+public class Textbox extends BaseController {
 	
 	public Textbox(By by)
 	{

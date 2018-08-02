@@ -2,9 +2,9 @@ package pages;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.NoSuchElementException;
-import controls.Button;
-import controls.Textbox;
-import controls.Link;
+import controller.Button;
+import controller.Textbox;
+import controller.Link;
 
 public class GooglePage extends BasePage {
 

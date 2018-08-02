@@ -1,9 +1,9 @@
-package controls;
+package controller;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.NoSuchElementException;
 
-public class Button extends BaseControl {
+public class Button extends BaseController {
 	
 	public Button(By by)
 	{
