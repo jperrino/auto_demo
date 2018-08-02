@@ -3,62 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="c2f85a34-590c-4e21-b639-7605a12b6cc5" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" afterPath="$PROJECT_DIR$/pom.xml" />
-      <change beforePath="$PROJECT_DIR$/target/classes/config.property" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/classes/controller/BaseController.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/classes/controller/Button.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/classes/controller/Image.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/classes/controller/Label.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/classes/controller/Link.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/classes/controller/Textbox.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/classes/data/ExcelDataProvider.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/classes/data/PropertiesProvider.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/classes/driver/DriverExtension.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/classes/driver/DriverInstanceManager.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/classes/driver/WebElementExtension.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/classes/helpers/PropertyInstanceManager.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/classes/pages/BasePage.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/classes/pages/GitHubHomePage.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/classes/pages/GitHubLoginPage.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/classes/pages/GooglePage.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/classes/pages/ResultPage.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/createdFiles.lst" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/Suite1/test2.html" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/Suite1/test2.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-TestSuite.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/TestSuite.txt" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/bullet_point.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/collapseall.gif" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/emailable-report.html" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/failed.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/index.html" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/jquery-1.7.1.min.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/junitreports/TEST-Test2.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/navigator-bullet.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/old/Suite1/classes.html" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/old/Suite1/groups.html" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/old/Suite1/index.html" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/old/Suite1/main.html" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/old/Suite1/methods-alphabetical.html" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/old/Suite1/methods-not-run.html" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/old/Suite1/methods.html" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/old/Suite1/reporter-output.html" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/old/Suite1/test2.properties" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/old/Suite1/testng.xml.html" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/old/Suite1/toc.html" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/old/index.html" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/passed.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/skipped.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/testng-reports.css" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/testng-reports.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/testng-results.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/testng.css" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/BaseTest.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/Test1.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/Test2.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/hello.iml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/HelloWorld.java" afterPath="" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -217,7 +163,7 @@
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="7">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="134" />
     <option name="y" value="39" />
     <option name="width" value="1530" />
@@ -245,6 +191,37 @@
             <path>
               <item name="auto_demo" type="b2602c69:ProjectViewProjectNode" />
               <item name="auto_demo" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="auto_demo" type="b2602c69:ProjectViewProjectNode" />
+              <item name="auto_demo" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="auto_demo" type="b2602c69:ProjectViewProjectNode" />
+              <item name="auto_demo" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="auto_demo" type="b2602c69:ProjectViewProjectNode" />
+              <item name="auto_demo" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="auto_demo" type="b2602c69:ProjectViewProjectNode" />
+              <item name="auto_demo" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="auto_demo" type="b2602c69:ProjectViewProjectNode" />
+              <item name="auto_demo" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -425,7 +402,7 @@
     </history-entry>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1056" extended-state="7" />
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -439,7 +416,7 @@
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.18496802" sideWeight="0.49899396" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.17377399" sideWeight="0.49899396" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
