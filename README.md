@@ -28,10 +28,9 @@
 2. Intrucciones de ejecución:
 - Parado en la carpeta del proyecto, abrir un 'Git Bash' y correr lo siguientes comandos:
 <br>git init
-<br>git clone https://github.com/jperrino/auto_demo.git
+<br>git clone https://github.com/jperrino/auto_demo.git<br>
 - Ubicarse en la carpeta que contiene el POM.xml y correr el siguiente comando:
 <br>mvn clean compile test
-<br>
 <br>
  
 <b>Notas:</b> 
