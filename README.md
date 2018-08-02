@@ -1,5 +1,3 @@
-# hello
-=======
 # Webdriver - Java Demo:
 
 1. Pasos previos:
@@ -37,3 +35,9 @@
  <br>mvn clean compile test
  <br>
  <br>
+ 
+<b>Nota:</b> 
+ <br>Modificar los test a ejecutar a través de la edición del result.xml
+ <br>Comentar/Agregar el nodo 'TestX' y definir el browser ('ff' o 'chrome')
+ <br>Agregar el 'listener' con la clase que se requiere.
+ <br>En caso de 'fallas', los screeenshots se generan en '.\screenshots\TestX'
