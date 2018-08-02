@@ -1,7 +1,7 @@
 # Webdriver - Java Demo:
 
 1. Pasos previos:
-- Instalar SDK Java 8+ :
+- Instalar SDK Java 8+:
   <br>http://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html
   <br>y variables de entorno:
   <br>JAVA_HOME: C:\Program Files\Java\jdk1.8.0_161
@@ -33,3 +33,5 @@
  <br>
 - Ubicarse en la carpeta que contiene el POM.xml y correr el siguiente comando:
  <br>mvn clean compile test
+ <br>
+ <br>
