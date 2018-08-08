@@ -20,12 +20,19 @@
   <br>PATH: %M2_HOME%\bin
   <br>
   <br>
+  <b>Nota:</b> Las variables de entorno se modifican en:
+  <br>Panel de Control > System > Advanced system settings > Environment Variables
+  <br>Ejemplo: https://ibb.co/cR6eGK
+  <br>
+  <br>
 - Instalar Git:
  <br>https://git-scm.com/downloads
- <br>
+ <br>(Default settings)
  <br>
  
 2. Instrucciones de ejecución:
+- Crear un directorio para el proyecto.
+<br>Ejemplo: C:\Users\user\Documents\JavaProjects
 - Parado en la carpeta del proyecto, abrir un 'Git Bash' y correr lo siguientes comandos:
 <br>git init
 <br>git clone https://github.com/jperrino/auto_demo.git
