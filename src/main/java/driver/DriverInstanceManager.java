@@ -67,6 +67,19 @@ public class DriverInstanceManager {
 		return actions;
 	}
 
+	public static void wait(int seconds){
+
+		try {
+			synchronized (DriverInstanceManager.getDriverInstance())
+			{
+				DriverInstanceManager.getDriverInstance().wait(seconds * 1000);
+			}
+		} catch (InterruptedException e) {
+			System.out.println("Driver interrupted exception");
+			e.printStackTrace();
+		}
+	}
+
 	public static void setTimeOut(int seconds)
 	{
 		timeout_seconds = seconds;

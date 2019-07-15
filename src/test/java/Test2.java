@@ -1,10 +1,9 @@
 import driver.DriverInstanceManager;
-import helpers.PropertyInstanceManager;
 import org.testng.Assert;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
-import pages.GitHubHomePage;
-import pages.GitHubLoginPage;
+import pageObjects.GitHubHomePage;
+import pageObjects.GitHubLoginPage;
 
 public class Test2 extends BaseTest {
 

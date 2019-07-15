@@ -3,8 +3,8 @@ import helpers.PropertyInstanceManager;
 import org.testng.Assert;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
-import pages.GooglePage;
-import pages.ResultPage;
+import pageObjects.GooglePage;
+import pageObjects.ResultPage;
 
 public class Test1 extends BaseTest {
 	

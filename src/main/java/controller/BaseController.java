@@ -1,11 +1,10 @@
 package controller;
 
-import org.openqa.selenium.By;
-import org.openqa.selenium.NoSuchElementException;
-import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.WebElement;
+import org.openqa.selenium.*;
 
 import driver.DriverInstanceManager;
+
+import java.util.List;
 
 public class BaseController {
 	
@@ -21,40 +20,15 @@ public class BaseController {
 		return DriverInstanceManager.getDriverInstance();
 	}
 	
-	protected WebElement getElement()
-	{
-		return getDriver().findElement(this.locator);
-	}
+	protected WebElement getElement() { return getDriver().findElement(this.locator); }
+
+	protected List<WebElement> getElements() { return getDriver().findElements(this.locator); }
 	
 	public boolean isDisplayed()
 	{
 		try
 		{
 			return getElement().isDisplayed();
-		}
-		catch(NoSuchElementException e)
-		{
-			return false;
-		}
-	}
-	
-	public boolean isEnabled()
-	{
-		try
-		{
-			return getElement().isEnabled();
-		}
-		catch(NoSuchElementException e)
-		{
-			return false;
-		}
-	}
-	
-	public boolean isSelected()
-	{
-		try
-		{
-			return getElement().isSelected();
 		}
 		catch(NoSuchElementException e)
 		{

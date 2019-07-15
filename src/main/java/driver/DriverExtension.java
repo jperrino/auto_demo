@@ -62,13 +62,13 @@ public class DriverExtension {
 
 	public static void takeScreenshot(String testName) {
 		DateTimeFormatter dtf = DateTimeFormatter.ofPattern("yyyy-MM-dd_HH-mm-ss");
-
 		TakesScreenshot ts = (TakesScreenshot) DriverInstanceManager.getDriverInstance();
+
 		try {
 			FileUtils.copyFile(ts.getScreenshotAs(OutputType.FILE),
 					new File(PropertyInstanceManager.
 							getPropertyInstance().
-							getProperty("ScreenshotFolder") + testName + "\\ss" + dtf.format(LocalDateTime.now()) + ".jpg"));
+							getProperty("ScreenshotFolder") + testName + "/ss" + dtf.format(LocalDateTime.now()) + ".png"));
 		} catch (IOException e) {
 			System.out.println(e.getMessage());
 		}

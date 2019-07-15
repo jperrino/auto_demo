@@ -1,0 +1,13 @@
+###DRIVERS###
+FireFoxDriver=./drivers/firefoxDriver/geckodriver
+ChromeDriver=./drivers/chromeDriver/chromedriver
+#############
+
+###URLS###
+URL=http://www.google.com
+############
+
+###PATHS###
+ExcelPath=./excelSheet/TestData.xlsx
+ScreenshotFolder=./screenshots/
+############
