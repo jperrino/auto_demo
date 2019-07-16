@@ -19,7 +19,7 @@ public class UltimateQA_NavBar extends BasePageObject {
     //////////////
     public Iterable<WebElement> op1_menu_links(){
         try{
-            return DriverExtension.findElementsWait(this.locator);
+            return new DriverExtension().findElementsWait(this.locator);
 
         }
         catch(NoSuchElementException e){

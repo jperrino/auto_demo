@@ -17,7 +17,7 @@ public class Test2 extends BaseTest {
 
     @BeforeMethod
     public void goHome(){
-        DriverInstanceManager.getDriverInstance()
+        driver.getDriverInstance()
                 .navigate()
                 .to("https://github.com/");
     }

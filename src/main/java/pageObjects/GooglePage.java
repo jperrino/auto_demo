@@ -1,5 +1,6 @@
 package pageObjects;
 
+import driver.DriverInstanceManager;
 import org.openqa.selenium.By;
 import org.openqa.selenium.NoSuchElementException;
 import controller.Button;
@@ -8,16 +9,23 @@ import controller.Link;
 
 public class GooglePage extends BasePageObject {
 
-	public GooglePage()
+	public GooglePage(DriverInstanceManager driver)
 	{
 		super(By.xpath(""));
+		super.setDriver(driver);
+	}
+
+	public void setDriver(DriverInstanceManager driver)
+	{
+		super.setDriver(driver);
 	}
 	
 	public Textbox search_txtb()
 	{
 		try
 		{
-			return new Textbox(By.id("lst-ib"));
+			return new Textbox(By.name("q"), super.getDriverManager());
+					//id("lst-ib"));
 		}
 		catch(NoSuchElementException e)
 		{
@@ -29,7 +37,7 @@ public class GooglePage extends BasePageObject {
 	{
 		try
 		{
-			return new Button(By.xpath("//*[@value='Google Search']"));
+			return new Button(By.xpath("//*[@value='Google Search']"), super.getDriverManager());
 		}
 		catch(NoSuchElementException e)
 		{
@@ -41,7 +49,7 @@ public class GooglePage extends BasePageObject {
 	{
 		try
 		{
-			return new Link(By.xpath("//a[@href='"+link+"']"));
+			return new Link(By.xpath("//a[@href='"+link+"']"), super.getDriverManager());
 		}
 		catch(NoSuchElementException e)
 		{

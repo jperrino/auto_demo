@@ -24,7 +24,7 @@ public class Test3 extends  BaseTest {
 
     @BeforeMethod
     public void goHome(){
-        DriverInstanceManager.getDriverInstance()
+        driver.getDriverInstance()
                 .navigate()
                 .to("https://www.ultimateqa.com/automation/");
     }
@@ -56,21 +56,21 @@ public class Test3 extends  BaseTest {
     @Test(priority = 2) //2. Verificar que al hacer click en la lupa abre input de search
     public void verificar_search_input(){
         navBar.search_btn().click();
-        DriverInstanceManager.wait(1);
+        driver.wait(1);
 
         Assert.assertTrue(navBar.search_txtb().isDisplayed());
     }
 
     @Test(priority = 3) //3. Abrir un post RANDOM del panel derecho y verificar que cambie la URL
     public void abrir_random_post_y_verificar_url() {
-        String home_url = DriverInstanceManager
+        String home_url = driver
                 .getDriverInstance()
                 .getCurrentUrl()
                 .toLowerCase();
 
         rightPanel.random_link().click();
 
-        Assert.assertFalse(DriverInstanceManager.getDriverInstance()
+        Assert.assertFalse(driver.getDriverInstance()
                 .getCurrentUrl().toLowerCase().equals(home_url));
     }
 
@@ -78,7 +78,7 @@ public class Test3 extends  BaseTest {
     public void verificar_header_size(){
         String header_style = homePage.home_header().getStyle().toLowerCase();
 
-        JavascriptExecutor js = (JavascriptExecutor) DriverInstanceManager.getDriverInstance();
+        JavascriptExecutor js = (JavascriptExecutor) driver.getDriverInstance();
         js.executeScript("window.scrollBy(0,1000)");
 
         /*

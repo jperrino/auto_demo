@@ -1,14 +1,23 @@
 package controller;
 
+import driver.DriverInstanceManager;
 import org.openqa.selenium.By;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.NoSuchElementException;
 
+import java.sql.Driver;
+
 public class Textbox extends BaseController {
-	
+
 	public Textbox(By by)
 	{
 		super(by);
+	}
+	
+	public Textbox(By by, DriverInstanceManager driver)
+	{
+		super(by);
+		super.setDriver(driver);
 	}
 	
 	public String getText()

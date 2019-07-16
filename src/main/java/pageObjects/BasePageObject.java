@@ -14,20 +14,35 @@ import org.openqa.selenium.remote.RemoteWebElement;
 public class BasePageObject implements Closeable  {
 
 	protected By locator;
+	DriverInstanceManager driver;
 	
-	public BasePageObject(By by) {
+	public BasePageObject(By by)
+	{
 		this.locator = by;
 	}
-	
-	protected WebDriver getDriver() {
-		return DriverInstanceManager.getDriverInstance();
+
+	protected void setDriver(DriverInstanceManager driver)
+	{
+		this.driver = driver;
+	}
+
+	protected DriverInstanceManager getDriverManager()
+	{
+		return driver;
 	}
 	
-	protected WebElement findElementInside(By by) {
+	protected WebDriver getDriver()
+	{
+		return driver.getDriverInstance();
+	}
+	
+	protected WebElement findElementInside(By by)
+	{
 		return getDriver().findElement(this.locator).findElement(by);
 	}
 	
-	protected List<WebElement> findElementsInside(By by) {
+	protected List<WebElement> findElementsInside(By by)
+	{
 		return getDriver().findElement(this.locator).findElements(by);
 	}
 
@@ -36,14 +51,21 @@ public class BasePageObject implements Closeable  {
 		return getDriver().findElement(this.locator);
 	}
 
-	protected List<WebElement> getElements() { return getDriver().findElements(this.locator); }
+	protected List<WebElement> getElements()
+	{
+		return getDriver().findElements(this.locator);
+	}
 	
 	@Override
-	public void close() throws IOException {
-		DriverInstanceManager.closeDriver();
+	public void close() throws IOException
+	{
+		driver.closeDriver();
 	}
 
-	protected WebElement castElement(RemoteWebElement e){ return (WebElement) e; }
+	protected WebElement castElement(RemoteWebElement e)
+	{
+		return (WebElement) e;
+	}
 	
 	public String getUrl() {
 		return getDriver().getCurrentUrl();
@@ -53,5 +75,8 @@ public class BasePageObject implements Closeable  {
 		return getDriver().getTitle();
 	}
 
-	public String getInnerText() {return getDriver().findElement(this.locator).getText();}
+	public String getInnerText()
+	{
+		return getDriver().findElement(this.locator).getText();
+	}
 }

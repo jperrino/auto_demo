@@ -2,6 +2,7 @@ import driver.DriverInstanceManager;
 import helpers.PropertyInstanceManager;
 import org.testng.Assert;
 import org.testng.annotations.BeforeMethod;
+import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
 import pageObjects.GooglePage;
 import pageObjects.ResultPage;
@@ -10,16 +11,19 @@ public class Test1 extends BaseTest {
 	
 	private GooglePage googlePage;
 	private ResultPage resultPage;
-	
-	public Test1()
+
+	@BeforeTest(dependsOnMethods = "initializeDriver")
+	public void initializeTest()
 	{
-		this.resultPage = new ResultPage();
-		this.googlePage = new GooglePage();
+		this.resultPage = new ResultPage(driver);
+		this.googlePage = new GooglePage(driver);
+		//googlePage.setDriver(driver);
+		//resultPage.setDriver(driver);
 	}
 
 	@BeforeMethod
 	public void goHome(){
-		DriverInstanceManager.getDriverInstance()
+		driver.getDriverInstance()
 				.navigate()
 				.to(PropertyInstanceManager
 						.getPropertyInstance()
@@ -29,9 +33,11 @@ public class Test1 extends BaseTest {
 	@Test(dataProvider = "searchData")
 	public void test1(String title, String link) throws InterruptedException{
 
+		//googlePage.setDriver(driver);
+		//resultPage.setDriver(driver);
 		googlePage.search_txtb().sendText(title);
 		googlePage.search_txtb().submit();
-		googlePage.result_link(link).click();
+		googlePage.result_link(link).sendEnter();
 		Assert.assertTrue(resultPage.
 							getTitle().
 							toLowerCase().

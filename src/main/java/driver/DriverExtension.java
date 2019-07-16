@@ -13,56 +13,56 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
-public class DriverExtension {
+public class DriverExtension extends DriverInstanceManager {
 
-	public static WebElement findElementWait(By by) {
-		return new WebDriverWait(DriverInstanceManager.getDriverInstance(), DriverInstanceManager.getTimeOut()).until(x -> x.findElement(by));
+	public WebElement findElementWait(By by) {
+		return new WebDriverWait(super.getDriverInstance(), super.getTimeOut()).until(x -> x.findElement(by));
 	}
 
-	public static Iterable<WebElement> findElementsWait(By by) {
-		return new WebDriverWait(DriverInstanceManager.getDriverInstance(), DriverInstanceManager.getTimeOut()).until(x -> x.findElements(by));
+	public Iterable<WebElement> findElementsWait(By by) {
+		return new WebDriverWait(super.getDriverInstance(), super.getTimeOut()).until(x -> x.findElements(by));
 	}
 
-	public static boolean elementExists(By by) {
+	public boolean elementExists(By by) {
 		try {
-			return DriverInstanceManager.getDriverInstance().findElement(by) != null;
+			return super.getDriverInstance().findElement(by) != null;
 		} catch (Exception e) {
 			System.out.println(e.getMessage());
 			return false;
 		}
 	}
 
-	public static boolean elementIsClickable(By by) {
+	public boolean elementIsClickable(By by) {
 		try {
-			return ExpectedConditions.elementToBeClickable(by).apply(DriverInstanceManager.getDriverInstance()) != null;
+			return ExpectedConditions.elementToBeClickable(by).apply(super.getDriverInstance()) != null;
 		} catch (Exception e) {
 			System.out.println(e.getMessage());
 			return false;
 		}
 	}
 
-	public static boolean elementIsVisible(By by) {
+	public boolean elementIsVisible(By by) {
 		try {
-			return ExpectedConditions.visibilityOfElementLocated(by).apply(DriverInstanceManager.getDriverInstance()) != null;
+			return ExpectedConditions.visibilityOfElementLocated(by).apply(super.getDriverInstance()) != null;
 		} catch (Exception e) {
 			System.out.println(e.getMessage());
 			return false;
 		}
 	}
 
-	public static boolean elementIsNotVisible(By by) {
+	public boolean elementIsNotVisible(By by) {
 
 		try {
-			return ExpectedConditions.invisibilityOfElementLocated(by).apply(DriverInstanceManager.getDriverInstance()) != null;
+			return ExpectedConditions.invisibilityOfElementLocated(by).apply(super.getDriverInstance()) != null;
 		} catch (Exception e) {
 			System.out.println(e.getMessage());
 			return false;
 		}
 	}
 
-	public static void takeScreenshot(String testName) {
+	public void takeScreenshot(String testName) {
 		DateTimeFormatter dtf = DateTimeFormatter.ofPattern("yyyy-MM-dd_HH-mm-ss");
-		TakesScreenshot ts = (TakesScreenshot) DriverInstanceManager.getDriverInstance();
+		TakesScreenshot ts = (TakesScreenshot) super.getDriverInstance();
 
 		try {
 			FileUtils.copyFile(ts.getScreenshotAs(OutputType.FILE),

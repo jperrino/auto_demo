@@ -15,11 +15,15 @@ import data.ExcelDataProvider;
 
 public class BaseTest implements Closeable,ITestListener {
 
+	DriverInstanceManager driver;
+
 	@BeforeTest
 	@Parameters("browser")
 	public void initializeDriver(String browserName)
 	{
-		DriverInstanceManager.browser = browserName;
+		driver = new DriverInstanceManager();
+		driver.setBrowser(browserName);
+		//driver.getDriverInstance();
 	}
 	
 	@DataProvider(name="searchData")
@@ -48,7 +52,7 @@ public class BaseTest implements Closeable,ITestListener {
 	@AfterTest
 	@Override
 	public void close() throws IOException {
-		DriverInstanceManager.closeDriver();
+		driver.closeDriver();
 		
 	}
 
@@ -64,7 +68,7 @@ public class BaseTest implements Closeable,ITestListener {
 
     @Override
     public void onTestFailure(ITestResult iTestResult) {
-        DriverExtension.takeScreenshot(iTestResult.getName());
+         new DriverExtension().takeScreenshot(iTestResult.getName());
     }
 
     @Override

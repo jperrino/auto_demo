@@ -11,12 +11,12 @@ import org.openqa.selenium.firefox.FirefoxOptions;
 import org.openqa.selenium.interactions.Actions;
 
 public class DriverInstanceManager {
-	private static WebDriver driver;
-	private static Actions actions;
-	public static String browser;
-	private static int timeout_seconds = 5;
+	private  WebDriver driver;
+	private  Actions actions;
+	public  String browser;
+	private  int timeout_seconds = 5;
 	
-	private static WebDriver createDriver()
+	private WebDriver createDriver()
 	{
 		switch(browser.toLowerCase())
 		{
@@ -39,7 +39,7 @@ public class DriverInstanceManager {
 	}
 	
 	
-	public static WebDriver getDriverInstance()
+	public WebDriver getDriverInstance()
 	{
 		if(driver == null)
 		{
@@ -55,24 +55,24 @@ public class DriverInstanceManager {
 		return driver;
 	}
 	
-	public static Actions getActionInstance()
+	public Actions getActionInstance()
 	{
 		if(actions == null)
 		{
 			synchronized(DriverInstanceManager.class)
 			{
-				actions = new Actions(getDriverInstance());
+				actions = new Actions(this.getDriverInstance());
 			}
 		}
 		return actions;
 	}
 
-	public static void wait(int seconds){
+	public void wait(int seconds){
 
 		try {
-			synchronized (DriverInstanceManager.getDriverInstance())
+			synchronized (this.getDriverInstance())
 			{
-				DriverInstanceManager.getDriverInstance().wait(seconds * 1000);
+				this.getDriverInstance().wait(seconds * 1000);
 			}
 		} catch (InterruptedException e) {
 			System.out.println("Driver interrupted exception");
@@ -80,18 +80,23 @@ public class DriverInstanceManager {
 		}
 	}
 
-	public static void setTimeOut(int seconds)
+	public void setBrowser(String browser)
+	{
+		this.browser = browser;
+	}
+
+	public  void setTimeOut(int seconds)
 	{
 		timeout_seconds = seconds;
 	}
 	
-	public static int getTimeOut()
+	public  int getTimeOut()
 	{
 		return timeout_seconds;
 	}
 	
 	
-	public static void closeDriver(){
+	public  void closeDriver(){
 		if(driver != null)
 		{
 			driver.quit();

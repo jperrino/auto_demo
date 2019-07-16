@@ -11,10 +11,10 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
-public class WebElementExtension {
+public class WebElementExtension extends DriverInstanceManager {
 
-    public static WebElement findElementWait(By by) {
-        return new WebDriverWait(DriverInstanceManager.getDriverInstance(), DriverInstanceManager.getTimeOut())
+    public WebElement findElementWait(By by) {
+        return new WebDriverWait(super.getDriverInstance(), super.getTimeOut())
                 .<WebElement>until(x -> x.findElement(by));
     }
 
@@ -23,37 +23,37 @@ public class WebElementExtension {
 //        return tt;
 //    }
 
-    public static WebElement findElementWait(By by, int timeout) {
-        return new WebDriverWait(DriverInstanceManager.getDriverInstance(), timeout)
+    public WebElement findElementWait(By by, int timeout) {
+        return new WebDriverWait(super.getDriverInstance(), timeout)
                 .<WebElement>until(x -> x.findElement(by));
     }
 
-    public static Iterable<WebElement> findElementsWait(By by) {
-        return new WebDriverWait(DriverInstanceManager.getDriverInstance(),DriverInstanceManager.getTimeOut())
+    public Iterable<WebElement> findElementsWait(By by) {
+        return new WebDriverWait(super.getDriverInstance(),super.getTimeOut())
                 .<Iterable<WebElement>>until(x -> x.findElements(by));
     }
 
-    public static WebElement findElementWait(WebElement webElement, By by, int timeout) {
-        return new WebDriverWait(DriverInstanceManager.getDriverInstance(), timeout)
+    public WebElement findElementWait(WebElement webElement, By by, int timeout) {
+        return new WebDriverWait(super.getDriverInstance(), timeout)
                 .<WebElement>until(x -> webElement.findElement(by));
     }
 
-    public static Iterable<WebElement> findElementsWait(WebElement webElement, By by) {
-        return new WebDriverWait(DriverInstanceManager.getDriverInstance(),DriverInstanceManager.getTimeOut())
+    public Iterable<WebElement> findElementsWait(WebElement webElement, By by) {
+        return new WebDriverWait(super.getDriverInstance(),super.getTimeOut())
                 .<Iterable<WebElement>>until(x -> webElement.findElements(by));
     }
 
-    public static boolean isClickable(WebElement webElement) {
-        return ExpectedConditions.elementToBeClickable(webElement).apply(DriverInstanceManager.getDriverInstance()) != null;
+    public boolean isClickable(WebElement webElement) {
+        return ExpectedConditions.elementToBeClickable(webElement).apply(super.getDriverInstance()) != null;
     }
 
-    public static void clickWait(WebElement webElement) {
-        new WebDriverWait(DriverInstanceManager.getDriverInstance(),DriverInstanceManager.getTimeOut())
+    public void clickWait(WebElement webElement) {
+        new WebDriverWait(super.getDriverInstance(),super.getTimeOut())
                 .until(x -> isClickable(webElement));
         webElement.click();
     }
 
-    public static boolean elementVisible(WebElement element, By by) {
+    public boolean elementVisible(WebElement element, By by) {
         try {
             return element.findElement(by).isDisplayed();
         }
@@ -62,8 +62,8 @@ public class WebElementExtension {
         }
     }
 
-    public static void innerElementInvisible(WebElement webElement, By by) {
-        new WebDriverWait(DriverInstanceManager.getDriverInstance(),DriverInstanceManager.getTimeOut())
+    public void innerElementInvisible(WebElement webElement, By by) {
+        new WebDriverWait(super.getDriverInstance(),super.getTimeOut())
                 .until(ExpectedConditions.invisibilityOf(webElement.findElement(by)));
     }
 
