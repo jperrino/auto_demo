@@ -1,4 +1,4 @@
-package controller;
+package controls;
 
 import org.openqa.selenium.*;
 
@@ -6,12 +6,12 @@ import driver.DriverInstanceManager;
 
 import java.util.List;
 
-public class BaseController {
+public class BaseControl {
 	
 	protected By locator;
 	DriverInstanceManager driver;
 	
-	public BaseController(By by)
+	public BaseControl(By by)
 	{
 		this.locator = by;
 	}

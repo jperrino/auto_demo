@@ -1,9 +1,9 @@
-package controller;
+package controls;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.NoSuchElementException;
 
-public class Image extends BaseController {
+public class Image extends BaseControl {
 	
 	public Image(By by)
 	{

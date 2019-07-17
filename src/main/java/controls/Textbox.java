@@ -1,13 +1,11 @@
-package controller;
+package controls;
 
 import driver.DriverInstanceManager;
 import org.openqa.selenium.By;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.NoSuchElementException;
 
-import java.sql.Driver;
-
-public class Textbox extends BaseController {
+public class Textbox extends BaseControl {
 
 	public Textbox(By by)
 	{

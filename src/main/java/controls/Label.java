@@ -1,9 +1,9 @@
-package controller;
+package controls;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.NoSuchElementException;
 
-public class Label extends BaseController {
+public class Label extends BaseControl {
 
     public Label(By by) {
         super(by);

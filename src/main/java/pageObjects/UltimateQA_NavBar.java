@@ -1,6 +1,6 @@
 package pageObjects;
 
-import controller.*;
+import controls.*;
 import driver.DriverExtension;
 import driver.WebElementExtension;
 import org.openqa.selenium.By;

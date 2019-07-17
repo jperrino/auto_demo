@@ -1,6 +1,6 @@
 package pageObjects;
 
-import controller.Header;
+import controls.Header;
 import org.openqa.selenium.By;
 import org.openqa.selenium.NoSuchElementException;
 

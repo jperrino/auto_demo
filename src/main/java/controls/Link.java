@@ -1,4 +1,4 @@
-package controller;
+package controls;
 
 import driver.DriverInstanceManager;
 import org.openqa.selenium.By;
@@ -6,7 +6,7 @@ import org.openqa.selenium.Keys;
 import org.openqa.selenium.NoSuchElementException;
 import org.openqa.selenium.StaleElementReferenceException;
 
-public class Link extends BaseController {
+public class Link extends BaseControl {
 
     public Link(By by)
     {

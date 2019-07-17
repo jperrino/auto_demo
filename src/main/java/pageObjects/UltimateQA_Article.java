@@ -1,7 +1,7 @@
 package pageObjects;
 
-import controller.Label;
-import controller.Link;
+import controls.Label;
+import controls.Link;
 import org.openqa.selenium.By;
 import org.openqa.selenium.NoSuchElementException;
 

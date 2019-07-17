@@ -3,9 +3,9 @@ package pageObjects;
 import driver.DriverInstanceManager;
 import org.openqa.selenium.By;
 import org.openqa.selenium.NoSuchElementException;
-import controller.Button;
-import controller.Textbox;
-import controller.Link;
+import controls.Button;
+import controls.Textbox;
+import controls.Link;
 
 public class GooglePage extends BasePageObject {
 
